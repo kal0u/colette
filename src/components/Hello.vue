@@ -10,8 +10,11 @@
       </div>
     </div>
     <div class="textContent">
-      <p class="welcome">Bienvenue dans la nouvelle galerie d’art
-en ligne dédiée aux professionnels.</p></div>
+      <p id="welcome">
+        Bienvenue dans la nouvelle galerie d’art en ligne dédiée aux
+        professionnels.
+      </p>
+    </div>
   </v-container>
 </template>
 
@@ -36,23 +39,27 @@ export default Vue.extend({
 }
 .titleContent {
   position: absolute;
+  border-radius: 25px;
   height: 100px;
   width: 40%;
   right: 30%;
   left: 30%;
   top: 75%;
   background-color: white;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 .textContent {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
-  font-family: "HkBold";
   font-size: 50px;
 }
-.welcome {
-  padding-top: 20%;
-  font-family: "HkLight";
+#welcome {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  font-size: 30px;
 }
 </style>

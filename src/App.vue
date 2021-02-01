@@ -3,6 +3,8 @@
     <NavBar />
 
     <Hello />
+
+    <Defisca/>
   </v-app>
 </template>
 
@@ -10,13 +12,14 @@
 import Vue from "vue";
 import Hello from "./components/Hello.vue";
 import NavBar from "./components/NavBar.vue";
-
+import Defisca from "./components/Defisca.vue"
 export default Vue.extend({
   name: "App",
 
   components: {
     Hello,
     NavBar,
+    Defisca,
   },
 
   data: () => ({
