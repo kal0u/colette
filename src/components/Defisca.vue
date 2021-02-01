@@ -13,33 +13,34 @@
     </div>
     <div class="mt-10 imgCard">
       <div class="cardText">
-      <h3 class="">Des locaux (vraiment) personnalisés</h3>
-      <span class="" >
-        Marque-employeur, bien-être des salariés Inspiration Communication,
-        events...
-      </span>
+        <h3 class="">Des locaux (vraiment) personnalisés</h3>
+        <span class="">
+          Marque-employeur, bien-être des salariés Inspiration Communication,
+          events...
+        </span>
       </div>
       <img :src="getImage('img1.png')" />
     </div>
-        <div class="mt-10 imgCard">
+    <div class="mt-10 imgCard">
       <img :src="getImage('img2.png')" />
-            <div class="cardText">
-      <h3 class="">Soutenir l’art contemporain</h3>
-      <span class="" >
-        Faire une bonne action tout ça, Corde
-sensible, image de l’entreprise
-      </span>
+      <div class="cardText">
+        <h3 class="">Soutenir l’art contemporain</h3>
+        <span class="">
+          Faire une bonne action tout ça, Corde sensible, image de l’entreprise
+        </span>
       </div>
     </div>
-        <div class="mt-10 imgCard">
-      <div class="cardText">
-      <h3 class="">Des locaux (vraiment) personnalisés</h3>
-      <span class="" >
-        Marque-employeur, bien-être des salariés Inspiration Communication,
-        events...
-      </span>
-      </div>
-      <img :src="getImage('img1.png')" />
+    <div class="mt-10 textCont">
+      <h2>Défiscalisation</h2>
+      <p class="mt-6">
+        C’est quand même pour ça qu’ils vont<br />
+        se motiver à le faire au final, on va pas<br />
+        faire genre.
+      </p>
+      <v-btn color="black" class="mt-8" dark large>
+        Comment <br />
+        Défiscaliser ?
+      </v-btn>
     </div>
   </v-container>
 </template>
@@ -75,11 +76,9 @@ export default Vue.extend({
   height: auto;
 }
 .imgCard h3 {
-  
   margin: 0;
 }
 .cardText {
   padding-bottom: 55px;
 }
-
 </style>
