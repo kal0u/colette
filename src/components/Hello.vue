@@ -53,5 +53,6 @@ export default Vue.extend({
 }
 .welcome {
   padding-top: 20%;
+  font-family: "HkLight";
 }
 </style>

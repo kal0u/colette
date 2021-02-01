@@ -29,5 +29,8 @@ export default Vue.extend({
   font-family: "HkBold";
   src: local("NotoSansHK-Bold"),
     url(./fonts/NotoSansHK-Bold.otf) format("truetype");
-
+  
+  font-family: "HkLight";
+  src: local("NotoSansHK-Light"),
+    url(./fonts/NotoSansHK-Light.otf) format("truetype");
 }
