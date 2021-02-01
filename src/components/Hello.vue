@@ -9,7 +9,9 @@
         </div>
       </div>
     </div>
-    <div></div>
+    <div class="textContent">
+      <p class="welcome">Bienvenue dans la nouvelle galerie d’art
+en ligne dédiée aux professionnels.</p></div>
   </v-container>
 </template>
 
@@ -48,5 +50,8 @@ export default Vue.extend({
   align-items: center;
   font-family: "HkBold";
   font-size: 50px;
+}
+.welcome {
+  padding-top: 20%;
 }
 </style>
