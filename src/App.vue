@@ -13,6 +13,7 @@ import Vue from "vue";
 import Hello from "./components/Hello.vue";
 import NavBar from "./components/NavBar.vue";
 import Defisca from "./components/Defisca.vue"
+import Caroussel from './components/Caroussel.vue'
 export default Vue.extend({
   name: "App",
 

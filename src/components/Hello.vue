@@ -1,20 +1,13 @@
 <template>
   <v-container>
-    <div class="container" style="width: 750px; margin: 0 auto;">
-      <div class="row-full">
-        <div class="titleContent">
-          <div class="textContent">
-            <p>Colette & Basile</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="textContent">
       <p id="welcome">
-        Bienvenue dans la nouvelle galerie d’art en ligne dédiée aux
-        professionnels.
+        Inspirer, décorer, défiscaliser.
       </p>
     </div>
+          <p style="text-align: center">Bienvenue chez Mousch,<br/>
+la nouvelle galerie d’art<br/>
+dédiée aux professionnels.</p>
   </v-container>
 </template>
 
@@ -35,7 +28,7 @@ export default Vue.extend({
   height: 200px;
   margin-top: 10px;
   left: 50%;
-  background-color: #e2e6dc;
+  background-color: white;
 }
 .titleContent {
   position: absolute;
@@ -61,5 +54,6 @@ export default Vue.extend({
   padding-top: 15%;
   padding-bottom: 10%;
   font-size: 30px;
+  font-weight: bold;
 }
 </style>
