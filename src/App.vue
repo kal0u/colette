@@ -5,6 +5,9 @@
     <Hello />
 
     <Defisca/>
+
+    <!-- <HowTo/> -->
+    <Caroussel/>
   </v-app>
 </template>
 
@@ -14,6 +17,7 @@ import Hello from "./components/Hello.vue";
 import NavBar from "./components/NavBar.vue";
 import Defisca from "./components/Defisca.vue"
 import Caroussel from './components/Caroussel.vue'
+import HowTo from './components/HowTo.vue'
 export default Vue.extend({
   name: "App",
 
@@ -21,6 +25,8 @@ export default Vue.extend({
     Hello,
     NavBar,
     Defisca,
+    Caroussel
+    // HowTo
   },
 
   data: () => ({

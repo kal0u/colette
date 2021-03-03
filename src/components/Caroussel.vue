@@ -1,32 +1,50 @@
 <template>
-  <v-container>
-    <div class="container" style="width: 750px; margin: 0 auto;">
-      <div class="row-full">
-        <div class="titleContent">
-          <div class="textContent">
-            <p>
-              Découvrez notre sélection concise <br />
-              et léchée de créatifs talentueux.
-            </p>
-          </div>
-        </div>
+  <div class="myMain">
+    <div class="textCont">
+      <div class="topComp">
+        <p class="pt-4 ml-2 mr-2 firstText">
+          Exposez une oeuvre d’art <br />dans vos locaux et défiscalisez.
+        </p>
+      </div>
+      <div class="carCont">
+        <!-- <vueper-slides
+        class="no-shadow"
+        :visible-slides="3"
+        :gap="3"
+        :slide-ratio="1 / 4"
+        :dragging-distance="200"
+      >
+        <vueper-slide
+          v-for="img in slides"
+          :key="img.name"
+          :title="img.title"
+          :image="img.content"
+        />
+      </vueper-slides> -->
+
+        <vueper-slides
+          :visible-slides="3"
+          :bullets="false"
+          slide-multiple
+          :infinite="false"
+          :gap="3"
+          :slide-ratio="1 / 4"
+          :dragging-distance="200"
+          :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
+        >
+          <vueper-slide
+            v-for="img in slides"
+            :key="img.name"
+            :title="img.title"
+            :image="img.content"
+          />
+        </vueper-slides>
+
+        <v-btn large color="black" class="myBtn white--text">CHOISIR<br/>
+MON ARTISTE</v-btn>
       </div>
     </div>
-    <vueper-slides
-      class="no-shadow"
-      :visible-slides="3"
-      :gap="3"
-      :slide-ratio="1 / 4"
-      :dragging-distance="200"
-    >
-      <vueper-slide
-        v-for="img in slides"
-        :key="img.name"
-        :title="img.title"
-        :image="img.content"
-      />
-    </vueper-slides>
-  </v-container>
+  </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
@@ -42,27 +60,21 @@ export default Vue.extend({
   data: () => ({
     slides: [
       {
-        title: "Test1",
         content: "https://i.imgur.com/LGjrKAv.png",
       },
       {
-        title: "Test2",
         content: "https://i.imgur.com/ACb7OCH.png",
       },
       {
-        title: "Test3",
         content: "https://i.imgur.com/2wnyvGd.png",
       },
       {
-        title: "Test4",
         content: "https://i.imgur.com/LGjrKAv.png",
       },
       {
-        title: "Test5",
         content: "https://i.imgur.com/2wnyvGd.png",
       },
       {
-        title: "Test6",
         content: "https://i.imgur.com/ACb7OCH.png",
       },
     ],
@@ -75,40 +87,49 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-.row-full {
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  height: 300px;
-  margin-top: 10px;
-  left: 50%;
-  background-color: #e2e6dc;
-}
-.titleContent {
+.carCont {
   position: absolute;
-  border-radius: 25px;
-  height: 100px;
-  width: 40%;
-  right: 30%;
-  left: 30%;
-  top: 40%;
+  top: 45%;
+  width: 80%;
+}
+.myMain {
+  width: 100%;
+  height: auto;
+}
+.textCont {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1200px;
+  background-image: url("https://images.unsplash.com/photo-1579762593131-b8945254345c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1122&q=80");
+  background-size: cover;
+  position: relative;
+}
+
+.topComp {
+  position: absolute;
+  margin-top: 20%;
+  /* top: 15%;
+  left: 35%; */
   background-color: white;
+  border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
+  display: block;
+}
+.firstText {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.textContent {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  text-align: center;
+.vueperslides__arrow svg  {
+  stroke-width: 8;
 }
-
-.vueperslide {
-  /* Make the image rounded. */
-  border-radius: 35px;
+.myBtn {
+  margin-top: 15%;
+  background-color: black;
+  color: white;
 }
 </style>

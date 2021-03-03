@@ -5,7 +5,7 @@
         Inspirer, décorer, défiscaliser.
       </p>
     </div>
-          <p style="text-align: center">Bienvenue chez Mousch,<br/>
+          <p  class="hello">Bienvenue chez Mousch,<br/>
 la nouvelle galerie d’art<br/>
 dédiée aux professionnels.</p>
   </v-container>
@@ -51,9 +51,15 @@ export default Vue.extend({
   font-size: 50px;
 }
 #welcome {
-  padding-top: 15%;
-  padding-bottom: 10%;
+  padding-top: 5%;
   font-size: 30px;
   font-weight: bold;
+}
+.hello {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5%;
+
 }
 </style>
