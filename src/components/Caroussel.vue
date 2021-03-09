@@ -44,6 +44,10 @@
 MON ARTISTE</v-btn>
       </div>
     </div>
+    <div class="blackTransition">
+      <p class="pt-12">« Gagner de l’argent est un art, travailler est un art,
+et faire de bonnes affaires est le plus bel art qui soit. » <br/> <span class="ml-8">Andy WARLOL</span> </p>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -131,5 +135,12 @@ export default Vue.extend({
   margin-top: 15%;
   background-color: black;
   color: white;
+}
+.blackTransition {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 150px;
 }
 </style>

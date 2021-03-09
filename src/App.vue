@@ -1,13 +1,11 @@
 <template>
   <v-app>
     <NavBar />
-
     <Hello />
-
     <Defisca/>
-
-    <!-- <HowTo/> -->
     <Caroussel/>
+    <Simulateur/>
+    <Contact/>
   </v-app>
 </template>
 
@@ -17,7 +15,8 @@ import Hello from "./components/Hello.vue";
 import NavBar from "./components/NavBar.vue";
 import Defisca from "./components/Defisca.vue"
 import Caroussel from './components/Caroussel.vue'
-import HowTo from './components/HowTo.vue'
+import Simulateur from "./components/Simulateur.vue"
+import Contact from './components/Contact.vue'
 export default Vue.extend({
   name: "App",
 
@@ -25,8 +24,9 @@ export default Vue.extend({
     Hello,
     NavBar,
     Defisca,
-    Caroussel
-    // HowTo
+    Caroussel,
+    Simulateur,
+    Contact
   },
 
   data: () => ({
