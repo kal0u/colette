@@ -11,8 +11,8 @@
         </p>
       </div>
       <div class="carCont">
-        <v-btn large class="myBtn"
-          >CONTACTEZ-NOUS</v-btn
+        <button class="myBtn"
+          >CONTACTEZ-NOUS</button
         >
       </div>
     </div>
@@ -94,8 +94,10 @@ export default Vue.extend({
 .vueperslides__arrow svg {
   stroke-width: 8;
 }
-.myBtn::before {
+.myBtn {
   margin-top: 5%;
+  padding: 2% 2% 2% 2%;
+  border-radius: 15px;
   background-color: black;
   color: white;
 }
