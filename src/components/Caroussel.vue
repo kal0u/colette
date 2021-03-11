@@ -40,13 +40,18 @@
           />
         </vueper-slides>
 
-        <v-btn large color="black" class="myBtn white--text">CHOISIR<br/>
-MON ARTISTE</v-btn>
+        <v-btn large color="black" class="myBtn white--text"
+          >CHOISIR<br />
+          MON ARTISTE</v-btn
+        >
       </div>
     </div>
     <div class="blackTransition">
-      <p class="pt-12">« Gagner de l’argent est un art, travailler est un art,
-et faire de bonnes affaires est le plus bel art qui soit. » <br/> <span class="ml-8">Andy WARLOL</span> </p>
+      <p class="pt-12">
+        « Gagner de l’argent est un art, travailler est un art, et faire de
+        bonnes affaires est le plus bel art qui soit. » <br />
+        <span class="ml-8">Andy WARLOL</span>
+      </p>
     </div>
   </div>
 </template>
@@ -108,6 +113,8 @@ export default Vue.extend({
   height: 1200px;
   background-image: url("https://images.unsplash.com/photo-1579762593131-b8945254345c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1122&q=80");
   background-size: cover;
+  background-attachment: fixed;
+
   position: relative;
 }
 
@@ -128,7 +135,7 @@ export default Vue.extend({
   font-weight: bold;
 }
 
-.vueperslides__arrow svg  {
+.vueperslides__arrow svg {
   stroke-width: 8;
 }
 .myBtn {

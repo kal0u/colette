@@ -103,6 +103,8 @@ export default Vue.extend({
   height: 1200px;
   background-image: url("../assets/img/cosmos.jpg");
   background-size: cover;
+  background-attachment: fixed;
+
   position: relative;
 }
 .topComp {
