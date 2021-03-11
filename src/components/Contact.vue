@@ -5,7 +5,7 @@
         <p class="pt-4 ml-2 mr-2 firstText">
           Une question ? Besoin d’un conseil ?
         </p>
-        <p class="mt-8">
+        <p class="mt-8 secondText">
           Notre équipe se fera un plaisir d’échanger avec vous. Attention, vous
           pourriez vous attacher (nous vous aimons déjà).
         </p>
@@ -92,6 +92,7 @@ export default Vue.extend({
 .firstText {
   font-size: 25px;
   font-weight: bold;
+  font-family: "Helvetica";
 }
 
 .vueperslides__arrow svg {
@@ -139,5 +140,8 @@ button span {
 .instaLogo {
   width: 80px;
   height: 80px;
+}
+.secondText {
+  font-family: "Helvetica";
 }
 </style>

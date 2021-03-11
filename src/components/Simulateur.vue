@@ -2,19 +2,17 @@
   <div class="myMain">
     <div class="textCont">
       <div class="topComp">
-        <p class="pt-4 ml-2 mr-2 firstText">
-          Trouvez le meilleur financement
-          </p>
-          <p class="mt-8">
-            Découvrez la solution idéale pour faire rentrer l’art dans votre
-            entreprise grâce à notre - fantastique - simulateur :</p>
-          <p class="mt-8 ml-2 mr-2">
-            Presque comme un devis émis en moins de deux minutes, il vous évite
-            un suspense inutiles. Grâce à lui, vous saurez combien vous pourrez
-            investir et comment défiscaliser de la meilleure façon. Fantastique,
-            donc.</p
-          >
-        
+        <p class="pt-4 ml-2 mr-2 firstText">Trouvez le meilleur financement</p>
+        <p class="mt-8 secondText">
+          Découvrez la solution idéale pour faire rentrer l’art dans votre
+          entreprise grâce à notre - fantastique - simulateur :
+        </p>
+        <p class="mt-8 ml-2 mr-2 secondText">
+          Presque comme un devis émis en moins de deux minutes, il vous évite un
+          suspense inutiles. Grâce à lui, vous saurez combien vous pourrez
+          investir et comment défiscaliser de la meilleure façon. Fantastique,
+          donc.
+        </p>
       </div>
       <div class="carCont">
         <v-btn large color="black" class="myBtn #fbfbf3--text"
@@ -79,6 +77,7 @@ export default Vue.extend({
 .firstText {
   font-size: 25px;
   font-weight: bold;
+  font-family: "Helvetica";
 }
 
 .vueperslides__arrow svg {
@@ -95,5 +94,8 @@ export default Vue.extend({
   width: 100%;
   text-align: center;
   height: 150px;
+}
+.secondText {
+  font-family: "Helvetica";
 }
 </style>
