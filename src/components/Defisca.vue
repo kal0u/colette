@@ -37,7 +37,7 @@
         </div>
       </div>
     </div>
-    <div class="textCont2">
+    <!-- <div class="textCont2">
       <div class="topComp">
         <p class="pt-4 ml-2 mr-2 firstText">Comment ça marche ?</p>
       </div>
@@ -70,7 +70,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <!-- </v-container> -->
 </template>
@@ -112,7 +112,7 @@ export default Vue.extend({
   margin-top: 20%;
   /* top: 15%;
   left: 35%; */
-  background-color: white;
+  background-color: #fbfbf3;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -123,7 +123,7 @@ export default Vue.extend({
   font-weight: bold;
 }
 .card1 {
-  background-color: white;
+  background-color: #fbfbf3;
   width: 30%;
   height: 18%;
   border-radius: 25px;
@@ -132,7 +132,7 @@ export default Vue.extend({
   box-shadow: 0 8px 6px -6px black;
 }
 .card2 {
-  background-color: white;
+  background-color: #fbfbf3;
   width: 30%;
   height: 18%;
   border-radius: 25px;
@@ -141,7 +141,7 @@ export default Vue.extend({
   box-shadow: 0 8px 6px -6px black;
 }
 .card3 {
-  background-color: white;
+  background-color: #fbfbf3;
   width: 30%;
   height: 18%;
   border-radius: 25px;

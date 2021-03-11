@@ -81,7 +81,7 @@ export default Vue.extend({
   margin-top: 10%;
   /* top: 15%;
   left: 35%; */
-  background-color: white;
+  background-color: #fbfbf3;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -102,10 +102,10 @@ export default Vue.extend({
   padding: 2% 2% 2% 2%;
   border-radius: 15px;
   background-color: black;
-  color: white;
+  color: #fbfbf3;
 }
 .myBtn:hover {
-  background: white;
+  background: #fbfbf3;
 }
 .myBtn:hover .cyan {
   color: #00ffff;
@@ -117,7 +117,7 @@ button span {
   transition: all 0.5s ease;
 }
 .whiteTransition {
-  background-color: white;
+  background-color: #fbfbf3;
   color: black;
   width: 100%;
   text-align: center;

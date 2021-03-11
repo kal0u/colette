@@ -28,7 +28,7 @@ export default Vue.extend({
   height: 200px;
   margin-top: 10px;
   left: 50%;
-  background-color: white;
+  background-color: #fbfbf3;
 }
 .titleContent {
   position: absolute;
@@ -38,7 +38,7 @@ export default Vue.extend({
   right: 30%;
   left: 30%;
   top: 75%;
-  background-color: white;
+  background-color: #fbfbf3;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;

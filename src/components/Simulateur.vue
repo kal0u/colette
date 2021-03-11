@@ -17,7 +17,7 @@
         
       </div>
       <div class="carCont">
-        <v-btn large color="black" class="myBtn white--text"
+        <v-btn large color="black" class="myBtn #fbfbf3--text"
           >JE TESTE LE<br />
           SIMULATEUR</v-btn
         >
@@ -68,7 +68,7 @@ export default Vue.extend({
   margin-top: 10%;
   /* top: 15%;
   left: 35%; */
-  background-color: white;
+  background-color: #fbfbf3;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -87,11 +87,11 @@ export default Vue.extend({
 .myBtn {
   margin-top: 15%;
   background-color: black;
-  color: white;
+  color: #fbfbf3;
 }
 .blackTransition {
   background-color: black;
-  color: white;
+  color: #fbfbf3;
   width: 100%;
   text-align: center;
   height: 150px;
