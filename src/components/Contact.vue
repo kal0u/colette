@@ -12,8 +12,7 @@
       </div>
       <div class="carCont">
         <button class="myBtn">
-          <span class="cyan">C</span>
-          <span class="red">O</span>
+          CONTACTEZ-NOUS
         </button>
       </div>
     </div>
@@ -106,14 +105,12 @@ export default Vue.extend({
   color: #fbfbf3;
 }
 .myBtn:hover {
-  background: #fbfbf3;
+  background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  background-color: white;
 }
-.myBtn:hover .cyan {
-  color: #00ffff;
-}
-.myBtn:hover .red {
-  color: red;
-}
+
 button span {
   transition: all 0.5s ease;
 }
