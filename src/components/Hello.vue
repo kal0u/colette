@@ -23,7 +23,6 @@ export default Vue.extend({
     }
   },
     created() {
-      console.log("here")
       const message = "Solution using Promises";
 
       const typingPromises = (message: any, timeout: any) =>
