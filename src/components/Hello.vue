@@ -1,13 +1,13 @@
 <template>
   <v-container>
     <div class="textContent">
-      <p id="welcome">
-        Inspirer, décorer, défiscaliser.
-      </p>
+      <p id="welcome"></p>
     </div>
-          <p  class="hello">Bienvenue chez Mousch,<br/>
-la nouvelle galerie d’art<br/>
-dédiée aux professionnels.</p>
+    <p class="hello">
+      Bienvenue chez Mousch,<br />
+      la nouvelle galerie d’art<br />
+      dédiée aux professionnels.
+    </p>
   </v-container>
 </template>
 
@@ -17,8 +17,35 @@ import Vue from "vue";
 export default Vue.extend({
   name: "HelloWorld",
 
-  data: () => ({}),
-});
+  data() {
+    return {
+
+    }
+  },
+    created() {
+      console.log("here")
+      const message = "Solution using Promises";
+
+      const typingPromises = (message: any, timeout: any) =>
+        [...message].map(
+          (ch, i) =>
+            new Promise<any>((resolve) => {
+              setTimeout(() => {
+                          console.log(message)
+
+                resolve(message.substring(0, i + 1));
+              }, timeout * i);
+            })
+        );
+
+      typingPromises(message, 140).forEach((promise) => {
+        promise.then((portion) => {
+          console.log(portion)
+          document.querySelector("p")!.innerHTML = portion;
+        });
+      });
+    },
+  })
 </script>
 <style scoped>
 .row-full {
@@ -60,6 +87,5 @@ export default Vue.extend({
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 5%;
-
 }
 </style>
