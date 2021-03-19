@@ -3,7 +3,9 @@
     <div class="textCont">
       <div class="topComp">
         <p class="pt-4 ml-2 mr-2 firstText">
-          Exposez une oeuvre d’art <br />dans vos locaux et défiscalisez.
+          Découvrez notre sélection léchée
+          <br />
+          d’artistes talentueux.
         </p>
       </div>
       <div class="carCont">
@@ -35,6 +37,7 @@
           <span>S</span>
           <span>I</span>
           <span>R</span>
+          <br/>
           <span> M</span>
           <span>O</span>
           <span>N</span>
@@ -107,7 +110,7 @@ export default Vue.extend({
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 65%;
+  top: 75%;
   width: 80%;
 }
 .myMain {
@@ -130,8 +133,8 @@ export default Vue.extend({
 .topComp {
   position: absolute;
   margin-top: 20%;
-  /* top: 15%;
-  left: 35%; */
+  width: 40%;
+
   background-color: #fbfbf3;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -140,15 +143,14 @@ export default Vue.extend({
   display: block;
 }
 .firstText {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: "Helvetica";
 }
 
 .vueperslides__arrow svg {
   stroke-width: 8;
 }
 .myBtn {
-  margin-top: 15%;
   background-color: black;
   color: #fbfbf3;
 }
@@ -231,4 +233,10 @@ export default Vue.extend({
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .firstText {
+    font-size: 12px;
+  }
+}
+
 </style>

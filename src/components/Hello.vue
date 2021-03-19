@@ -23,7 +23,7 @@ export default Vue.extend({
     }
   },
     created() {
-      const message = "Solution using Promises";
+      const message = "Inspirer, décorer, défiscaliser.";
 
       const typingPromises = (message: any, timeout: any) =>
         [...message].map(
