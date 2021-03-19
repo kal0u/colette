@@ -15,10 +15,26 @@
         </p>
       </div>
       <div class="carCont">
-        <v-btn large color="black" class="myBtn #fbfbf3--text"
-          >JE TESTE LE<br />
-          SIMULATEUR</v-btn
-        >
+        <div class="myBtn">
+          <span>J</span>
+          <span>E</span>
+          <span> T</span>
+          <span>E</span>
+          <span>S</span>
+          <span>T</span>
+          <span> L</span>
+          <span>E</span>
+          <span> S</span>
+          <span>I</span>
+          <span>M</span>
+          <span>U</span>
+          <span>L</span>
+          <span>A</span>
+          <span>T</span>
+          <span>E</span>
+          <span>U</span>
+          <span>R</span>
+        </div>
       </div>
     </div>
   </div>
@@ -44,6 +60,8 @@ export default Vue.extend({
   position: absolute;
   top: 45%;
   width: 80%;
+  display: flex;
+  justify-content: center;
 }
 .myMain {
   width: 100%;
@@ -97,5 +115,77 @@ export default Vue.extend({
 }
 .secondText {
   font-family: "Helvetica";
+}
+</style>
+<style lang="scss" scoped>
+.myBtn {
+  margin-top: 5%;
+  padding: 2% 2% 2% 2%;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: black;
+  color: #fbfbf3;
+}
+
+.myBtn:hover {
+  background-color: white;
+  span {
+    transition: all ease 1s;
+    &:first-child {
+      color: cyan;
+    }
+    &:nth-child(2) {
+      color: #ea4335;
+    }
+    &:nth-child(3) {
+      color: blue;
+    }
+    &:nth-child(4) {
+      color: pink;
+    }
+    &:nth-child(5) {
+      color: rgb(177, 177, 32);
+    }
+    &:nth-child(6) {
+      color: green;
+    }
+    &:nth-child(7) {
+      color: orange;
+    }
+    &:nth-child(8) {
+      color: #ea4335;
+    }
+    &:nth-child(9) {
+      color: pink;
+    }
+    &:nth-child(10) {
+      color: rgb(177, 177, 32);
+    }
+    &:nth-child(11) {
+      color: green;
+    }
+    &:nth-child(12) {
+      color: orange;
+    }
+    &:nth-child(13) {
+      color: cyan;
+    }
+    &:nth-child(14) {
+      color: #ea4335;
+    }
+    &:nth-child(15) {
+      color: pink;
+    }
+    &:nth-child(16) {
+      color: rgb(177, 177, 32);
+    }
+    &:nth-child(17) {
+      color: green;
+    }
+    &:nth-child(18) {
+      color: orange;
+    }
+  }
 }
 </style>

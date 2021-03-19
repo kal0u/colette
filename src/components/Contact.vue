@@ -11,9 +11,22 @@
         </p>
       </div>
       <div class="carCont">
-        <button class="myBtn">
-          CONTACTEZ-NOUS
-        </button>
+        <div class="myBtn">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+          <span>E</span>
+          <span>Z</span>
+          <span>-</span>
+          <span>N</span>
+          <span>O</span>
+          <span>U</span>
+          <span>S</span>
+        </div>
       </div>
     </div>
     <div class="whiteTransition pt-12">
@@ -97,23 +110,10 @@ export default Vue.extend({
 .vueperslides__arrow svg {
   stroke-width: 8;
 }
-.myBtn {
-  margin-top: 5%;
-  padding: 2% 2% 2% 2%;
-  border-radius: 15px;
-  background-color: black;
-  color: #fbfbf3;
-}
-.myBtn:hover {
-  background: -webkit-linear-gradient(#eee, #333);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  background-color: white;
-}
 
-button span {
+/* button span {
   transition: all 0.5s ease;
-}
+} */
 .whiteTransition {
   background-color: #fbfbf3;
   color: black;
@@ -140,5 +140,69 @@ button span {
 }
 .secondText {
   font-family: "Helvetica";
+}
+.carCont {
+  display: flex;
+  justify-content: center;
+}
+</style>
+<style lang="scss" scoped>
+.myBtn {
+  margin-top: 5%;
+  padding: 2% 2% 2% 2%;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: black;
+  color: #fbfbf3;
+}
+
+.myBtn:hover {
+  background-color: white;
+  span {
+    transition: all ease 1s;
+    &:first-child {
+      color: cyan;
+    }
+    &:nth-child(2) {
+      color: #ea4335;
+    }
+    &:nth-child(3) {
+      color: blue;
+    }
+    &:nth-child(4) {
+      color: pink;
+    }
+    &:nth-child(5) {
+      color: rgb(177, 177, 32);
+    }
+    &:nth-child(6) {
+      color: green;
+    }
+    &:nth-child(7) {
+      color: orange;
+    }
+    &:nth-child(8) {
+      color: #ea4335;
+    }
+    &:nth-child(9) {
+      color: pink;
+    }
+    &:nth-child(10) {
+      color: rgb(177, 177, 32);
+    }
+    &:nth-child(11) {
+      color: green;
+    }
+    &:nth-child(12) {
+      color: orange;
+    }
+    &:nth-child(13) {
+      color: cyan;
+    }
+    &:nth-child(14) {
+      color: #ea4335;
+    }
+  }
 }
 </style>
