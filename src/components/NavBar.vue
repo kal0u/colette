@@ -1,7 +1,7 @@
 <template>
-  <div class="container" style="width: 750px; margin: 0 auto;">
+  <div class="myMain mt-2">
     <div class="row-full">
-      <img :src="getImage('header.png')"/>
+      <img class="myImage" :src="getImage('header.png')" />
     </div>
   </div>
 </template>
@@ -9,9 +9,9 @@
 import Vue from "vue";
 export default Vue.extend({
   data() {
-    return { }
+    return {};
   },
-   methods: {
+  methods: {
     getImage(path: string) {
       return require("../assets/img/" + path);
     },
@@ -21,7 +21,18 @@ export default Vue.extend({
 <style scoped>
 .row-full {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+}
+.myMain {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .myImage {
+    width: 20%;
+    height: 20%;
+  }
 }
 </style>

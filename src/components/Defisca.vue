@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="cardContainer">
-        <div class="card1">
+        <div class="card1 pb-4 pr-2 pl-2">
           <p class="myTitle">Sublimez votre image</p>
           <p class="cardText">
             Une entreprise qui acquiert de l’art est une entreprise cultivée. En
@@ -17,7 +17,7 @@
             communication, événements, esthétique, valeurs...
           </p>
         </div>
-        <div class="card2">
+        <div class="card2 pb-4 pr-2 pl-2">
           <p class="myTitle">Brillez, inspirez.</p>
           <p class="cardText">
             Offrez à vos collaborateurs, clients ou patients une attention
@@ -26,7 +26,7 @@
             impression.
           </p>
         </div>
-        <div class="card3">
+        <div class="card3 pb-4 pr-2 pl-2">
           <p class="myTitle">Payez moins d’impôts.</p>
           <p class="cardText">
             En cas d’achat, vous pouvez défiscaliser jusqu’à 100% de la valeur
@@ -75,6 +75,8 @@ export default Vue.extend({
 .topComp {
   position: absolute;
   margin-top: 20%;
+    width: 40%;
+
   background-color: #fbfbf3;
   border-radius: 15px;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -83,12 +85,19 @@ export default Vue.extend({
 }
 .firstText {
   font-size: 20px;
-  font-family: "Helvetica";
+  font-family: Arial, Helvetica, sans-serif;
+}
+.myTitle {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 12px;
 }
 .card1 {
   background-color: #fbfbf3;
-  width: calc(25% - 20px);
-  height: 280px;
+  width: 30%;
+  height: 23%;
+  overflow: auto; 
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -96,8 +105,9 @@ export default Vue.extend({
 }
 .card2 {
   background-color: #fbfbf3;
-  width: calc(25% - 20px);
-  height: 280px;
+  width: 30%;
+  height: 23%;
+  overflow: auto;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -105,8 +115,9 @@ export default Vue.extend({
 }
 .card3 {
   background-color: #fbfbf3;
-  width: calc(25% - 20px);
-  height: 280px;
+  width: 30%;
+  height: 23%;
+  overflow: auto;
   border-radius: 25px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
@@ -119,9 +130,24 @@ export default Vue.extend({
   top: 45%;
 }
 @media screen and (max-width: 600px) {
-  .card {
-    width: 100%;
+  .card1 {
+    width: calc(32% - 20px);
   }
+  .card2 {
+    width: calc(32% - 20px);
+  }
+  .card3 {
+    width: calc(32% - 20px);
+  }
+  .cardText {
+    font-size: 10px;
+  }
+  .myTitle {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 12px;
+}
 }
 .textCont2 {
   text-align: center;
@@ -134,10 +160,5 @@ export default Vue.extend({
   background-size: cover;
   position: relative;
 }
-.myTitle {
-  font-size: 18px;
-  font-family: "Helvetica";
-  font-weight: bold;
-  margin-top: 12px;
-}
+
 </style>

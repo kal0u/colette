@@ -3,11 +3,11 @@
     <div class="textCont">
       <div class="topComp">
         <p class="pt-4 ml-2 mr-2 firstText">Trouvez le meilleur financement</p>
-        <p class="mt-8 secondText">
+        <p class="mt-8 mr-4 ml-4 secondText">
           Découvrez la solution idéale pour faire rentrer l’art dans votre
           entreprise grâce à notre - fantastique - simulateur :
         </p>
-        <p class="mt-8 ml-2 mr-2 secondText">
+        <p class="mt-8 mr-4 ml-4 s secondText">
           Presque comme un devis émis en moins de deux minutes, il vous évite un
           suspense inutiles. Grâce à lui, vous saurez combien vous pourrez
           investir et comment défiscaliser de la meilleure façon. Fantastique,
@@ -91,16 +91,14 @@ export default Vue.extend({
   box-shadow: 0 8px 6px -6px black;
   display: block;
   width: 30%;
+  overflow: auto;
 }
 .firstText {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "Helvetica";
 }
 
-.vueperslides__arrow svg {
-  stroke-width: 8;
-}
 .myBtn {
   margin-top: 15%;
   background-color: black;
@@ -186,6 +184,16 @@ export default Vue.extend({
     &:nth-child(18) {
       color: orange;
     }
+  }
+}
+@media screen and (max-width: 600px) {
+  .firstText {
+    font-size: 12px;
+    font-family: "Helvetica";
+    font-weight: bold;
+  }
+  .secondText {
+    font-size: 10px;
   }
 }
 </style>
