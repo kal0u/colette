@@ -1,13 +1,12 @@
 <template>
   <div class="myCont">
     <div class="textContent">
-      <h1 id="welcome">Frannie</h1>
-      <p class="subTitle">
-        Dealer d’art pour les professionnels <br />
-        Dealer de communication artistique
-      </p>
+      <h1 id="textTitle">QUE CHERCHEZ-VOUS ?</h1>
+      <div class="btnCont">
+        <div class="orangeBtn">J’ai une idée précise</div>
+        <div class="orangeBtn">Inspirez-moi !</div>
+      </div>
     </div>
-    <div class="orangeBtn">Découvrir</div>
   </div>
 </template>
 
@@ -28,33 +27,30 @@ export default Vue.extend({
   height: auto;
 }
 .textContent {
-  padding-top: 15%;
+  padding-top: 5%;
   width: 100vw;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   height: auto;
   justify-content: center;
   align-items: center;
   background-color: #e9cadb;
 }
-#welcome {
+#textTitle {
   text-align: center;
   font-family: "Space Mono", monospace;
   color: #041c96;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
 }
-.subTitle {
-  text-align: center;
-  font-family: MonoReg;
-  color: white;
-  font-size: 14px;
+.btnCont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
 }
 .orangeBtn {
   width: 210px;
   height: 50px;
   position: relative;
-  left: 45%;
-  top: -2%;
   border: 2px solid #eb562e;
   background-color: white;
   box-shadow: 6px 6px 0px 1px #eb562e;

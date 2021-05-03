@@ -1,18 +1,20 @@
 <template>
   <v-app>
     <Hello />
-    <!-- <Defisca/>
-    <HowTo/>
+    <Card />
+    <Choice />
+    <!-- <HowTo/>
     <Caroussel/>
     <Simulateur/>
-    <Contact/> -->
+    <Contact/>  -->
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Hello from "./components/Hello.vue";
-// import Defisca from "./components/Defisca.vue"
+import Card from "./components/Card.vue"
+import Choice from "./components/Choice.vue"
 // import HowTo from "./components/HowTo.vue"
 // import Caroussel from './components/Caroussel.vue'
 // import Simulateur from "./components/Simulateur.vue"
@@ -22,7 +24,8 @@ export default Vue.extend({
 
   components: {
     Hello,
-    // Defisca,
+    Card,
+    Choice
     // HowTo,
     // Caroussel,
     // Simulateur,
@@ -35,6 +38,7 @@ export default Vue.extend({
 });
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @font-face {
   font-family: "MonoBold";
   src: local("SpaceMono-Bold"),
