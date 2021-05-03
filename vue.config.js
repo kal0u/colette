@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/colette/',
+  publicPath: '',
   transpileDependencies: [
     'vuetify'
   ]

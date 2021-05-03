@@ -1,14 +1,14 @@
 <template>
-  <v-container>
+  <div class="myCont">
     <div class="textContent">
-      <p id="welcome"></p>
+      <h1 id="welcome">Frannie</h1>
+      <p class="subTitle">
+        Dealer d’art pour les professionnels <br />
+        Dealer de communication artistique
+      </p>
     </div>
-    <p class="hello">
-      Bienvenue chez Mousch,<br />
-      la nouvelle galerie d’art<br />
-      dédiée aux professionnels.
-    </p>
-  </v-container>
+    <div class="orangeBtn">Découvrir</div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -20,48 +20,51 @@ export default Vue.extend({
   data() {
     return {};
   },
-  created() {
-    const message = "Inspirer, décorer, défiscaliser.";
-
-    const typingPromises = (message: any, timeout: any) =>
-      [...message].map(
-        (ch, i) =>
-          new Promise<any>((resolve) => {
-            setTimeout(() => {
-              console.log(message);
-
-              resolve(message.substring(0, i + 1));
-            }, timeout * i);
-          })
-      );
-
-    typingPromises(message, 140).forEach((promise) => {
-      promise.then((portion) => {
-        console.log(portion);
-        document.querySelector("p")!.innerHTML = portion;
-      });
-    });
-  },
 });
 </script>
 <style scoped>
+.myCont {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
 .textContent {
-  display: flex;
-  height: 100%;
+  padding-top: 15%;
+  width: 100vw;
+  padding-bottom: 15%;
+  height: auto;
   justify-content: center;
   align-items: center;
+  background-color: #e9cadb;
 }
 #welcome {
-  padding-top: 5%;
-  font-size: 30px;
   text-align: center;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MonoBold;
+  color: #041c96;
+  font-size: 60px;
+  font-weight: 700;
 }
-.hello {
+.subTitle {
   text-align: center;
-  font-size: 20px;
-  padding-bottom: 5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: MonoReg;
+  color: white;
+  font-size: 14px;
+}
+.orangeBtn {
+  width: 210px;
+  height: 50px;
+  position: relative;
+  left: 45%;
+  top: -2%;
+  border: 2px solid #eb562e;
+  background-color: white;
+  box-shadow: 6px 6px 0px 1px #eb562e;
+  font-family: MonoBold;
+  color: #eb562e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 </style>
