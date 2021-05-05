@@ -5,8 +5,15 @@
         <p class="myTitle">ACQUÉREZ DE L’ART</p>
         <p class="cardText">
           En achetant ou en louant de l’art, vous pouvez
-          <span style="text-decoration: underline; font-weight: bold"
-            >défiscaliser</span
+          <router-link
+            :to="'/defi'"
+            target="_blank"
+            style="
+              text-decoration: underline;
+              font-weight: bold;
+              cursor: pointer;
+            "
+            >défiscaliser</router-link
           >
           la totalité ou une partie du montant de l’oeuvre et embellir vos
           locaux tout en soutenant un artiste !

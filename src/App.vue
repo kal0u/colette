@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <Hello />
+    <router-view></router-view>
+    <!-- <Hello />
     <Card />
-    <Choice />
+    <Choice /> -->
     <!-- <HowTo/>
     <Caroussel/>
     <Simulateur/>
@@ -12,9 +13,9 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Hello from "./components/Hello.vue";
-import Card from "./components/Card.vue"
-import Choice from "./components/Choice.vue"
+// import Hello from "./components/Hello.vue";
+// import Card from "./components/Card.vue"
+// import Choice from "./components/Choice.vue"
 // import HowTo from "./components/HowTo.vue"
 // import Caroussel from './components/Caroussel.vue'
 // import Simulateur from "./components/Simulateur.vue"
@@ -22,15 +23,15 @@ import Choice from "./components/Choice.vue"
 export default Vue.extend({
   name: "App",
 
-  components: {
-    Hello,
-    Card,
-    Choice
-    // HowTo,
-    // Caroussel,
-    // Simulateur,
-    // Contact
-  },
+  // components: {
+  //   Hello,
+  //   Card,
+  //   Choice
+  //   // HowTo,
+  //   // Caroussel,
+  //   // Simulateur,
+  //   // Contact
+  // },
 
   data: () => ({
     //
