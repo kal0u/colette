@@ -12,6 +12,7 @@
               text-decoration: underline;
               font-weight: bold;
               cursor: pointer;
+              color: white;
             "
             >défiscaliser</router-link
           >
