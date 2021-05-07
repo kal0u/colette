@@ -1,14 +1,14 @@
 <template>
-  <v-container>
+  <div class="myCont">
     <div class="textContent">
-      <p id="welcome"></p>
+      <h1 id="welcome">Frannie</h1>
+      <p class="subTitle">
+        Dealer d’art pour les professionnels <br />
+        Dealer de communication artistique
+      </p>
     </div>
-    <p class="hello">
-      Bienvenue chez Mousch,<br />
-      la nouvelle galerie d’art<br />
-      dédiée aux professionnels.
-    </p>
-  </v-container>
+    <div class="orangeBtn">Découvrir</div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -18,73 +18,53 @@ export default Vue.extend({
   name: "HelloWorld",
 
   data() {
-    return {
-
-    }
+    return {};
   },
-    created() {
-      const message = "Inspirer, décorer, défiscaliser.";
-
-      const typingPromises = (message: any, timeout: any) =>
-        [...message].map(
-          (ch, i) =>
-            new Promise<any>((resolve) => {
-              setTimeout(() => {
-                          console.log(message)
-
-                resolve(message.substring(0, i + 1));
-              }, timeout * i);
-            })
-        );
-
-      typingPromises(message, 140).forEach((promise) => {
-        promise.then((portion) => {
-          console.log(portion)
-          document.querySelector("p")!.innerHTML = portion;
-        });
-      });
-    },
-  })
+});
 </script>
 <style scoped>
-.row-full {
+.myCont {
   width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  height: 200px;
-  margin-top: 10px;
-  left: 50%;
-  background-color: #fbfbf3;
-}
-.titleContent {
-  position: absolute;
-  border-radius: 25px;
-  height: 100px;
-  width: 40%;
-  right: 30%;
-  left: 30%;
-  top: 75%;
-  background-color: #fbfbf3;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  height: auto;
 }
 .textContent {
-  display: flex;
-  height: 100%;
+  padding-top: 15%;
+  width: 100vw;
+  padding-bottom: 15%;
+  height: auto;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  background-color: #e9cadb;
 }
 #welcome {
-  padding-top: 5%;
-  font-size: 30px;
-  font-weight: bold;
-}
-.hello {
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  padding-bottom: 5%;
+  font-family: "Space Mono", monospace;
+  color: #041c96;
+  font-size: 60px;
+  font-weight: 700;
+}
+.subTitle {
+  text-align: center;
+  font-family: MonoReg;
+  color: white;
+  font-size: 14px;
+}
+.orangeBtn {
+  width: 210px;
+  height: 50px;
+  position: relative;
+  left: 45%;
+  top: -2%;
+  border: 2px solid #eb562e;
+  background-color: white;
+  box-shadow: 6px 6px 0px 1px #eb562e;
+  color: #eb562e;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 </style>

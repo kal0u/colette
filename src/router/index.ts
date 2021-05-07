@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
-
+import Defisca from '../components/Defisca.vue'
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
@@ -10,6 +10,11 @@ const routes: Array<RouteConfig> = [
     name: 'Home',
     component: Home
   },
+  {
+    path :'/defi',
+    name : 'Defisca',
+    component: Defisca
+  }
 ]
 
 const router = new VueRouter({

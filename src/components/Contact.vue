@@ -5,7 +5,7 @@
         <p class="pt-4 ml-2 mr-2 firstText">
           Une question ? Besoin d’un conseil ?
         </p>
-        <p class="mt-8 secondText">
+        <p class="mt-8 mr-4 ml-4 secondText">
           Notre équipe se fera un plaisir d’échanger avec vous. Attention, vous
           pourriez vous attacher (nous vous aimons déjà).
         </p>
@@ -100,20 +100,14 @@ export default Vue.extend({
   box-shadow: 0 8px 6px -6px black;
   display: block;
   width: 30%;
+  overflow: auto;
 }
 .firstText {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "Helvetica";
 }
 
-.vueperslides__arrow svg {
-  stroke-width: 8;
-}
-
-/* button span {
-  transition: all 0.5s ease;
-} */
 .whiteTransition {
   background-color: #fbfbf3;
   color: black;
@@ -121,7 +115,6 @@ export default Vue.extend({
   text-align: center;
   display: flex;
   justify-content: center;
-  /* height: 450px; */
 }
 .logoCont {
   width: 20px;
@@ -203,6 +196,16 @@ export default Vue.extend({
     &:nth-child(14) {
       color: #ea4335;
     }
+  }
+}
+@media screen and (max-width: 600px) {
+  .firstText {
+    font-size: 12px;
+    font-family: "Helvetica";
+    font-weight: bold;
+  }
+  .secondText {
+    font-size: 10px;
   }
 }
 </style>
